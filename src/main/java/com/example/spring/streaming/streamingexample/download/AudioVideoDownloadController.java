@@ -1,4 +1,4 @@
-package com.example.spring.streaming.streamingexample.mvc;
+package com.example.spring.streaming.streamingexample.download;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,8 +16,8 @@ import java.nio.file.Paths;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("stream/audiovideo")
-public class AudioVideoController
+@RequestMapping("stream/download/audiovideo")
+public class AudioVideoDownloadController
 {
     // ============================== [Fields] ==============================
 

@@ -1,19 +1,17 @@
-package com.example.spring.streaming.streamingexample.mvc;
+package com.example.spring.streaming.streamingexample.download;
 
 import com.example.spring.streaming.streamingexample.dto.Student;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 import reactor.core.publisher.Flux;
 
 import java.time.Duration;
 
 @RestController
-@RequestMapping("stream/webflux")
-public class WebFluxController
+@RequestMapping("stream/download/webflux")
+public class WebFluxDownloadController
 {
     // ============================== [Fields] ==============================
 

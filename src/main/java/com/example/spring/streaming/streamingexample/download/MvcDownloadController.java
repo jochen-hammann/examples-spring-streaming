@@ -1,9 +1,8 @@
-package com.example.spring.streaming.streamingexample.mvc;
+package com.example.spring.streaming.streamingexample.download;
 
 import com.example.spring.streaming.streamingexample.dto.Student;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ResourceUtils;
@@ -13,18 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 
 import java.io.*;
-import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Optional;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 @RestController
-@RequestMapping("stream/mvc")
-public class MvcController
+@RequestMapping("stream/download/mvc")
+public class MvcDownloadController
 {
     // ============================== [Fields] ==============================
 
